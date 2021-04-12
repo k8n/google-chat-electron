@@ -26,8 +26,7 @@ export default (window: BrowserWindow) => {
 
     const isDownloadUrl = url.includes('https://chat.google.com/u/0/api/get_attachment_url');
 
-    const isExternalUrl = extractHostname(url) === 'mail.google.com' &&
-      !url.startsWith('https://mail.google.com/chat')
+    const isExternalUrl = !url.startsWith('https://chat.google.com')
 
     const isNotWhitelistedDomain = !whiteListDomains.includes(extractHostname(url));
 

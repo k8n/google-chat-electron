@@ -15,7 +15,7 @@
     "ts": "tsc",
     "prepack:mac": "yarn run clean:dist && yarn run ts",
     "pack:mac": "electron-packager . Chat --platform=darwin --arch=x64 --asar --overwrite --out=./dist/ --icon=./resources/icons/normal/256.icns",
-    "build:mac-zip": "electron-installer-zip ./dist/google-chat-electron-darwin-x64/google-chat-electron.app ./dist/installers/google-chat-electron-darwin-x64.zip",
+    "build:mac-zip": "electron-installer-zip ./dist/Chat-darwin-x64/Chat.app ./dist/installers/Chat-darwin-x64.zip",
     "prepack:linux": "yarn run clean:dist && yarn run ts",
     "pack:linux": "electron-packager . --platform=linux --arch=x64 --asar --overwrite --out=./dist/",
     "build:deb": "electron-installer-debian --config=./debian/config.json --arch=amd64",
